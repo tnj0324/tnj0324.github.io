@@ -1,0 +1,134 @@
+<html>
+<head>
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="gobo.css">
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="gobo.js"></script>
+  <script src="js/bootstrap.bundle.js"></script>
+</head>
+<body>
+  <div class="text-center">
+      <h2>ドラゴンボールファイターズチーム動画検索</h2>
+  <button id="kara" style="WIDTH: 50px; HEIGHT: 50px">
+    clear
+  </button>
+  <button id="kuuhaku" style="WIDTH: 50px; HEIGHT: 50px">
+    any
+  </button>
+</div>
+  <div id="gobolist" class="text-center">
+  <a href="javascript:void(0)" id="chara5" chara-id="B.Goku">
+    <img id="img-chara" src="https://wikiwiki.jp/dbfzjpwiki/?plugin=ref&page=FrontPage&src=N-goku.jpg&rev=7c00b6c24ac1bf4d3e3c7768be13f70c">
+  </a>
+  <a href="javascript:void(0)" id="chara6" chara-id="Tien">
+   <img id="img-chara" src="https://wikiwiki.jp/dbfzjpwiki/?plugin=ref&page=FrontPage&src=Tien+Shinhan.jpg&rev=456b8cf1377cdd6e218e3ad30d406edf">
+  </a>
+  <a href="javascript:void(0)" id="chara7" chara-id="Yamcha">
+   <img id="img-chara" src="https://wikiwiki.jp/dbfzjpwiki/?plugin=ref&page=FrontPage&src=Yamcha.jpg&rev=95f5065aabc0de31681d865ed5985943">
+  </a>
+  <a href="javascript:void(0)" id="chara4" chara-id="A.Gohan">
+   <img id="img-chara" src="https://wikiwiki.jp/dbfzjpwiki/?plugin=ref&page=FrontPage&src=Agohan.jpg&rev=099fdbc92644c2dc138d6974ae1e3be0">
+  </a>
+  <a href="javascript:void(0)" id="chara8" chara-id="クリリン">
+   <img id="img-chara" src="https://wikiwiki.jp/dbfzjpwiki/?plugin=ref&page=FrontPage&src=Krillin_0.jpg&rev=34de6840d6eab95d6f7c9ee46d0b98a9">
+  </a>
+  <a href="javascript:void(0)" id="chara" chara-id="ssGoku">
+   <img id="img-chara" src="https://wikiwiki.jp/dbfzjpwiki/?plugin=ref&page=FrontPage&src=goku.jpg&rev=c8d4e8e67eaf113b7c0b1b562984f47a">
+  </a>
+  <a href="javascript:void(0)" id="chara9" chara-id="フリーザ">
+   <img id="img-chara" src="https://wikiwiki.jp/dbfzjpwiki/?plugin=ref&page=FrontPage&src=Frieza.jpg&rev=8222491c9f3ae76b6d02822804998633">
+  </a>
+  <a href="javascript:void(0)" id="chara10" chara-id="18号">
+   <img id="img-chara" src="https://wikiwiki.jp/dbfzjpwiki/?plugin=ref&page=FrontPage&src=a18.jpg&rev=793e51ee5a6c22cbf440496a9826ada1">
+  </a>
+  <a href="javascript:void(0)" id="chara11" chara-id="純粋ブウ">
+   <img id="img-chara" src="https://wikiwiki.jp/dbfzjpwiki/?plugin=ref&page=FrontPage&src=kid+buu.jpg&rev=5343373ed299869bf03ce7c543c6e136">
+  </a>
+  <a href="javascript:void(0)" id="chara12" chara-id="ギニュー">
+   <img id="img-chara" src="https://wikiwiki.jp/dbfzjpwiki/?plugin=ref&page=FrontPage&src=ginyu.jpg&rev=5348fa5ce4db34edb8e17b494545db14">
+  </a>
+  <a href="javascript:void(0)" id="chara13" chara-id="ナッパ">
+   <img id="img-chara" src="https://wikiwiki.jp/dbfzjpwiki/?plugin=ref&page=FrontPage&src=nappa.jpg&rev=2163ba8874e580670b4a2d54b4b3102f">
+  </a>
+  <a href="javascript:void(0)" id="chara14" chara-id="Bベジータ">
+   <img id="img-chara" src="https://wikiwiki.jp/dbfzjpwiki/?plugin=ref&page=FrontPage&src=N-vegeta.jpg&rev=b9b5e6360ebb7f5de202bb006f3bccaf">
+  </a>
+  <br>
+  <a href="javascript:void(0)" id="chara15" chara-id="17号">
+   <img id="img-chara" src="https://wikiwiki.jp/dbfzjpwiki/?plugin=ref&page=FrontPage&src=a17.jpg&rev=4ff882405241bedc323a36ece17e9dd6">
+  </a>
+  <a href="javascript:void(0)" id="chara2" chara-id="バーダック" >
+   <img id="img-chara" src="https://wikiwiki.jp/dbfzjpwiki/?plugin=ref&page=FrontPage&src=Bardock2.jpg&rev=4ca130f26d82e443c5c98c291cd4bef2">
+  </a>
+  <a href="javascript:void(0)" id="chara16" chara-id="ssgss悟空">
+   <img id="img-chara" src="https://wikiwiki.jp/dbfzjpwiki/?plugin=ref&page=FrontPage&src=SSGSSgoku.jpg&rev=ef0d1a694bb6eeb0e8480eeb8e683beb">
+  </a>
+  <a href="javascript:void(0)" id="chara17" chara-id="トランクス">
+   <img id="img-chara" src="https://wikiwiki.jp/dbfzjpwiki/?plugin=ref&page=FrontPage&src=trunks_0.jpg&rev=73befc1b77623a80c1afeff9b4906bba">
+  </a>
+  <a href="javascript:void(0)" id="chara1" chara-id="ベジ">
+   <img id="img-chara" src="https://wikiwiki.jp/dbfzjpwiki/?plugin=ref&page=FrontPage&src=Vegeta.jpg&rev=7267d4a91428e6cf2733b056b5b3b4fd">
+  </a>
+  <a href="javascript:void(0)" id="chara18" chara-id="ビルス">
+   <img id="img-chara" src="https://wikiwiki.jp/dbfzjpwiki/?plugin=ref&page=FrontPage&src=beerus.jpg&rev=b9743ce930325b668fe2d0a91a38b5f7">
+  </a>
+  <a href="javascript:void(0)" id="chara19" chara-id="Cell">
+   <img id="img-chara" src="https://wikiwiki.jp/dbfzjpwiki/?plugin=ref&page=FrontPage&src=cell.jpg&rev=541c9c54479f49561d97f4595bccb0c9">
+  </a>
+  <a href="javascript:void(0)" id="chara20" chara-id="A.16">
+   <img id="img-chara" src="https://wikiwiki.jp/dbfzjpwiki/?plugin=ref&page=FrontPage&src=a16.jpg&rev=4054c367d1732b9b9d4b5b5642a603f1">
+  </a>
+  <a href="javascript:void(0)" id="chara21" chara-id="ssgssベジータ">
+   <img id="img-chara" src="https://wikiwiki.jp/dbfzjpwiki/?plugin=ref&page=FrontPage&src=SSGSS+Vegeta.jpg&rev=264c18cbead686369e6f1e0eed7495f3">
+  </a>
+  <a href="javascript:void(0)" id="chara22" chara-id="ブロリー">
+   <img id="img-chara" src="https://wikiwiki.jp/dbfzjpwiki/?plugin=ref&page=FrontPage&src=Broly2.jpg&rev=d9d96f317e36e3d10bc92bd8b5808f5b">
+  </a>
+  <a href="javascript:void(0)" id="chara23" chara-id="クウラ">
+   <img id="img-chara" src="https://wikiwiki.jp/dbfzjpwiki/?plugin=ref&page=FrontPage&src=Cooler_0.jpg&rev=80c061bc86623eef6eead4a2901d060a">
+  </a>
+  <br>
+  <a href="javascript:void(0)" id="chara32" chara-id="ビーデル">
+   <img id="img-chara" src="https://wikiwiki.jp/dbfzjpwiki/?plugin=ref&page=FrontPage&src=Videl.jpg&rev=999dfc42a365fa0317939aa2f184d4b6">
+  </a>
+  <a href="javascript:void(0)" id="chara24" chara-id="ベジット">
+   <img id="img-chara" src="https://wikiwiki.jp/dbfzjpwiki/?plugin=ref&page=FrontPage&src=vegito2.jpg&rev=d017c9d69dfd365c09b642c7498842d2">
+  </a>
+  <a href="javascript:void(0)" id="chara25" chara-id="ゴテンクス">
+   <img id="img-chara" src="https://wikiwiki.jp/dbfzjpwiki/?plugin=ref&page=FrontPage&src=Gotenks.jpg&rev=8f5631ca0d58c043ef30ce802f6c7842">
+  </a>
+  <a href="javascript:void(0)" id="chara26" chara-id="ピッコロ">
+   <img id="img-chara" src="https://wikiwiki.jp/dbfzjpwiki/?plugin=ref&page=FrontPage&src=piccolo.jpg&rev=545a3e1fa20a6914cedd44acb3420f7e">
+  </a>
+  <a href="javascript:void(0)" id="chara3" chara-id="少年悟飯">
+   <img id="img-chara" src="https://wikiwiki.jp/dbfzjpwiki/?plugin=ref&page=FrontPage&src=gohan.jpg&rev=c54346f42e3674504329bdde3fbc2ba7" >
+  </a>
+  <a href="javascript:void(0)" id="chara27" chara-id="21号">
+   <img id="img-chara" src="https://wikiwiki.jp/dbfzjpwiki/?plugin=ref&page=FrontPage&src=a21.jpg&rev=d4ed51d4bd316b12335eab80d5a6329b">
+  </a>
+  <a href="javascript:void(0)" id="chara28" chara-id="善ブウ">
+   <img id="img-chara" src="https://wikiwiki.jp/dbfzjpwiki/?plugin=ref&page=FrontPage&src=buu.jpg&rev=e05829791d8bb8c2cc4b9b9ad1389f3f">
+  </a>
+  <a href="javascript:void(0)" id="chara29" chara-id="ヒット">
+   <img id="img-chara" src="https://wikiwiki.jp/dbfzjpwiki/?plugin=ref&page=FrontPage&src=hit.jpg&rev=869ec50938a4998a53ad2b4ff21bf47b">
+  </a>
+  <a href="javascript:void(0)" id="chara30" chara-id="悟空ブラック">
+   <img id="img-chara" src="https://wikiwiki.jp/dbfzjpwiki/?plugin=ref&page=FrontPage&src=goku+black.jpg&rev=23ccd55f3f41a8d9501ab4c295398e4b">
+  </a>
+  <a href="javascript:void(0)" id="chara31" chara-id="ザマス">
+   <img id="img-chara" src="https://wikiwiki.jp/dbfzjpwiki/?plugin=ref&page=FrontPage&src=Fused+Zamasu2.jpg&rev=29bee68acec907ae96d3db0991784549">
+  </a>
+  <a href="javascript:void(0)" id="chara33" chara-id="ジレン">
+   <img id="img-chara" src="https://wikiwiki.jp/dbfzjpwiki/?plugin=ref&page=FrontPage&src=Ziren.jpg&rev=ea11aee4c3eb6a0118f1da7d50841586">
+  </a>
+</div>
+  <div class="container">
+  <div class="row">
+  <div class="card-group">
+  </div>
+  </div>
+  </div>
+</body>
+
+
+</html>
