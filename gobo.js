@@ -37,9 +37,6 @@ $('#' + Object.keys(stock)[i]).html('<img id="img-chara" src="' + stock[Object.k
     })
 
     .done(function(data) {
-        console.log('dekimasita');
-      console.log(data);
-
       for(var t = 0; t < data.items.length; t++ ){
       var link = '<a class="card-body text-center" target="_blank" href="https://www.youtube.com/watch?v=' + data.items[t].id.videoId + '">'
       var title = '<p class="card-title">"' + data.items[t].snippet.title + '"</p>'　　
@@ -49,7 +46,6 @@ $('#' + Object.keys(stock)[i]).html('<img id="img-chara" src="' + stock[Object.k
     }
    })
     .fail(function() {
-        console.log('damepo');
     })
     .always(function(){
       array =[]
@@ -92,8 +88,7 @@ $.ajax({
  })
 
  .done(function(data) {
-     console.log('dekimasita');
-   console.log(data);
+
    for(var t = 0; t < data.items.length; t++ ){
    var link = '<a class="card-body text-center" target="_blank" href="https://www.youtube.com/watch?v=' + data.items[t].id.videoId + '">'
    var title = '<p class="card-title">"' + data.items[t].snippet.title + '"</p>'　　
@@ -103,7 +98,7 @@ $.ajax({
  }
 })
  .fail(function() {
-     console.log('damepo');
+    
  })
  .always(function(){
    array = []
