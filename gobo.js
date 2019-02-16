@@ -39,9 +39,9 @@ $('#' + Object.keys(stock)[i]).html('<img id="img-chara" src="' + stock[Object.k
     .done(function(data) {
       for(var t = 0; t < data.items.length; t++ ){
       var link = '<a class="card-body text-center" target="_blank" href="https://www.youtube.com/watch?v=' + data.items[t].id.videoId + '">'
-      var title = '<p class="card-title">"' + data.items[t].snippet.title + '"</p>'　　
+      var title = '<p class="card-title">' + data.items[t].snippet.title + '</p>'　　
        var samune = '<img class="card-img-top" src="' + data.items[t].snippet.thumbnails.medium.url +'">'
-       var setsumei = '<p class="card-text">"' + data.items[t].snippet.description + '"</p></a>'
+       var setsumei = '<p class="card-text">' + data.items[t].snippet.description + '</p></a>'
       $('.card-group').append('<div class="col-4"><div class="card"> "' + link + title + samune + setsumei + '"</div></div>')
     }
    })
@@ -91,14 +91,14 @@ $.ajax({
 
    for(var t = 0; t < data.items.length; t++ ){
    var link = '<a class="card-body text-center" target="_blank" href="https://www.youtube.com/watch?v=' + data.items[t].id.videoId + '">'
-   var title = '<p class="card-title">"' + data.items[t].snippet.title + '"</p>'　　
+   var title = '<p class="card-title">' + data.items[t].snippet.title + '</p>'　　
     var samune = '<img class="card-img-top" src="' + data.items[t].snippet.thumbnails.medium.url +'">'
-    var setsumei = '<p class="card-text">"' + data.items[t].snippet.description + '"</p></a>'
-   $('.card-group').append('<div class="col-4"><div class="card"> "' + link + title + samune + setsumei + '"</div></div>')
+    var setsumei = '<p class="card-text">' + data.items[t].snippet.description + '</p></a>'
+   $('.card-group').append('<div class="col-4"><div class="card"> ' + link + title + samune + setsumei + '</div></div>')
  }
 })
  .fail(function() {
-    
+
  })
  .always(function(){
    array = []
